@@ -477,13 +477,13 @@ class AutoModel(object):
         )
 
         def export_model(self, custom_objects={}):
-        """Export the best Keras Model.
+            """Export the best Keras Model.
 
-        # Returns
-            tf.keras.Model instance. The best model found during the search, loaded
-            with trained weights.
-        """
-        if custom_objects:
-            return self.tuner.get_best_model(custom_objects=custom_objects)
-        else:
-            return self.tuner.get_best_model()
+            # Returns
+                tf.keras.Model instance. The best model found during the search, loaded
+                with trained weights.
+            """
+            if custom_objects:
+                return self.tuner.get_best_model(custom_objects=custom_objects)
+            else:
+                return self.tuner.get_best_model()
