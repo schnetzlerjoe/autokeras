@@ -60,7 +60,7 @@ class AutoTuner(kerastuner.engine.tuner.Tuner):
 
     def get_best_model(self):
         with hm_module.maybe_distribute(self.distribution_strategy):
-            model = tf.keras.models.load_model(self.best_model_path)
+            model = tf.keras.models.load_model(self.best_model_path, custom_objects={"custom_metric": custom_metric})
         return model
 
     def get_best_pipeline(self):
