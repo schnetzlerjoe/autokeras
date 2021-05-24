@@ -16,7 +16,7 @@ setup(
     author="Data Analytics at Texas A&M (DATA) Lab, Keras Team",
     author_email="jhfjhfj1@gmail.com",
     url="http://autokeras.com",
-    download_url=https://github.com/schnetzlerjoe/autokerasjoe/archive/1.0.14.tar.gz",
+    download_url=https://github.com/schnetzlerjoe/autokerasjoe.git",
     keywords=["AutoML", "Keras"],
     install_requires=[
         "packaging",
